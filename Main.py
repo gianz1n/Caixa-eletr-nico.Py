@@ -20,7 +20,7 @@ class Main:
               self.Saldo += valor
 
        def saque(self, valor):
-              while self.Saldo < valor:
+              if self.Saldo < valor:
                      print('Valor Insuficiente!')
               else:
                      self.Saldo -= valor
